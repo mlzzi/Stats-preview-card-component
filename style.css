@@ -1,6 +1,7 @@
 body {
     background-color: hsl(233, 47%, 7%);
     font-size: 15px;
+    
 }
 
 main {
@@ -72,6 +73,14 @@ img {
     border-radius: 0 6px 6px 0;
 }
 
+.img1 {
+    display:block;
+}
+
+.img2 {
+    display:none
+}
+
 .square {
     width: 540px;
     height: 446px;
@@ -90,4 +99,77 @@ footer {
 
 footer a {
     color: hsl(277, 64%, 61%);
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        width: 375px;
+    }
+    
+    main {
+        width: 329px;
+        height: 782px;
+        margin: 50px auto;
+        border-radius: 10px 10px 10px 10px;
+    }
+
+    img {
+        float: none;
+        width: 100%;
+        position: relative;
+        top: -469px;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .square {
+        display: absolute;
+        top: -711px;
+        right: 0;
+        width: 100%;
+        height: 242px;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .img1 {
+        display:none;
+    }
+    .img2 {
+        display:block
+    }
+
+    .info {
+        float: none;
+        width: 100%;
+        border-radius: 8px 8px 0 0;
+        position: relative;
+        top: 280px;
+    }
+
+    h1 {
+        text-align: center;
+        margin: 0 24px;
+        font-family: 'Inter', sans-serif;
+        font-size: 1.8em;
+        font-weight: 700;
+    }
+
+    main p {
+        text-align: center;
+        margin: 15px 30px 25px 30px;
+        font-family: 'Inter', sans-serif;
+        font-size: 15px;
+        line-height: 1.7em;
+    }
+
+    .stats {
+        margin: 20px 0 0 0;
+        text-align: center;
+    }
+
+    .stats li {
+        display: block;
+        text-align: center;
+        line-height: 2em;
+        padding: 15px 0 0 0;
+    }
 }
